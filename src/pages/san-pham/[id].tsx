@@ -1,26 +1,39 @@
-import { useState, useMemo } from 'react';
-import type { GetServerSideProps } from 'next';
+import {useMemo, useState} from 'react';
+import type {GetServerSideProps} from 'next';
 import Link from 'next/link';
 import {motion} from 'framer-motion';
 import {
-	Minus, Plus, ShoppingBag, Truck, RefreshCw, Shield, ChevronRight,
-	MapPin, Snowflake, ChefHat, Star, ChevronLeft, BookOpen, Calendar, Scale
+	BookOpen,
+	Calendar,
+	ChefHat,
+	ChevronLeft,
+	ChevronRight,
+	MapPin,
+	Minus,
+	Plus,
+	RefreshCw,
+	Scale,
+	Shield,
+	ShoppingBag,
+	Snowflake,
+	Star,
+	Truck
 } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
-import { getProductById, products, formatPrice, type Product } from '@/data/products';
+import {formatPrice, getProductById, type Product, products} from '@/data/products';
 import {useCart} from '@/store/cart';
 import {reviews} from '@/data/reviews';
-import { toast } from 'sonner';
+import {toast} from 'sonner';
 
 const REVIEWS_PER_PAGE = 6;
 
 interface ProductDetailProps {
-  id: string;
-  product: Product | null;
+	id: string;
+	product: Product | null;
 }
 
-export default function ProductDetail({ id, product }: ProductDetailProps) {
+export default function ProductDetail({id, product}: ProductDetailProps) {
 	const [reviewName, setReviewName] = useState('');
 	const [reviewLocation, setReviewLocation] = useState('');
 	const [reviewRating, setReviewRating] = useState(5);
@@ -82,7 +95,7 @@ export default function ProductDetail({ id, product }: ProductDetailProps) {
 					<div className="min-h-[60vh] flex items-center justify-center">
 						<div className="text-center">
 							<h1 className="text-2xl font-bold text-foreground mb-4">Sản phẩm không tồn tại</h1>
-						<Link href="/san-pham" className="btn-primary">
+							<Link href="/san-pham" className="btn-primary">
 								Quay lại cửa hàng
 							</Link>
 						</div>
@@ -121,9 +134,9 @@ export default function ProductDetail({ id, product }: ProductDetailProps) {
 	
 	// Breadcrumbs for SEO
 	const breadcrumbs = [
-		{ name: 'Trang chủ', url: '/' },
-		{ name: 'Sản phẩm', url: '/san-pham' },
-		{ name: product.name, url: `/san-pham/${product.id}` },
+		{name: 'Trang chủ', url: '/'},
+		{name: 'Sản phẩm', url: '/san-pham'},
+		{name: product.name, url: `/san-pham/${product.id}`},
 	];
 	
 	// Product SEO data
@@ -688,14 +701,14 @@ export default function ProductDetail({ id, product }: ProductDetailProps) {
 }
 
 export const getServerSideProps: GetServerSideProps<ProductDetailProps> = async (ctx) => {
-  const idParam = ctx.params?.id;
-  const id = typeof idParam === 'string' ? idParam : '';
-  const product = id ? getProductById(id) : null;
-
-  return {
-    props: {
-      id,
-      product: product ?? null,
-    },
-  };
+	const idParam = ctx.params?.id;
+	const id = typeof idParam === 'string' ? idParam : '';
+	const product = id ? getProductById(id) : null;
+	
+	return {
+		props: {
+			id,
+			product: product ?? null,
+		},
+	};
 };

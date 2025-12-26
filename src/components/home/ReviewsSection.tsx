@@ -1,34 +1,34 @@
 import {useRef, useState} from 'react';
 import {motion, useScroll, useTransform} from 'framer-motion';
-import {Calendar, Quote, Star, ChevronLeft, ChevronRight} from 'lucide-react';
+import {Calendar, ChevronLeft, ChevronRight, Quote, Star} from 'lucide-react';
 import {reviews} from '@/data/reviews';
 
 export default function ReviewsSection() {
 	const ref = useRef<HTMLElement>(null);
 	const [page, setPage] = useState(1);
 	const PAGE_SIZE = 6;
-
+	
 	const {scrollYProgress} = useScroll({
 		target: ref,
 		offset: ["start end", "end start"]
 	});
-
+	
 	const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 	const y = useTransform(scrollYProgress, [0, 0.3], [60, 0]);
-
+	
 	const totalPages = Math.max(1, Math.ceil(reviews.length / PAGE_SIZE));
 	const start = (page - 1) * PAGE_SIZE;
 	const paginatedReviews = reviews.slice(start, start + PAGE_SIZE);
-
+	
 	const goto = (p: number) => setPage(Math.min(Math.max(1, p), totalPages));
-
+	
 	// Helper: produce a compact list of pages with ellipses
 	const getVisiblePages = (current: number, total: number, maxButtons = 5): (number | string)[] => {
 		if (total <= maxButtons) return Array.from({length: total}, (_, i) => i + 1);
 		const pages: (number | string)[] = [];
 		const left = Math.max(2, current - 1);
 		const right = Math.min(total - 1, current + 1);
-
+		
 		pages.push(1);
 		if (left > 2) pages.push('...');
 		for (let i = left; i <= right; i++) pages.push(i);
@@ -36,9 +36,9 @@ export default function ReviewsSection() {
 		pages.push(total);
 		return pages;
 	}
-
+	
 	const visiblePages = getVisiblePages(page, totalPages, 5);
-
+	
 	return (
 			<motion.section
 					ref={ref}
@@ -69,7 +69,7 @@ export default function ReviewsSection() {
 							Đánh giá từ cộng đồng
 						</motion.h2>
 					</motion.div>
-
+					
 					{/* Reviews Grid */}
 					<motion.div
 							key={page}
@@ -97,7 +97,7 @@ export default function ReviewsSection() {
 									>
 										<Quote className="w-8 h-8 text-primary/20 mb-4"/>
 									</motion.div>
-
+									
 									{/* Stars */}
 									<div className="flex gap-1 mb-4">
 										{[...Array(review.rating)].map((_, i) => (
@@ -112,12 +112,12 @@ export default function ReviewsSection() {
 												</motion.div>
 										))}
 									</div>
-
+									
 									{/* Content */}
 									<p className="text-foreground leading-relaxed mb-4">
 										"{review.content}"
 									</p>
-
+									
 									{/* Author */}
 									<div className="flex items-center justify-between pt-4 border-t border-border">
 										<div>
@@ -140,7 +140,7 @@ export default function ReviewsSection() {
 								</motion.div>
 						))}
 					</motion.div>
-
+					
 					{/* Pagination Controls (compact) */}
 					<div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-8">
 						<div className="flex items-center gap-2">
@@ -157,7 +157,7 @@ export default function ReviewsSection() {
 								<ChevronLeft className="w-4 h-4"/>
 								Prev
 							</button>
-
+							
 							<button
 									onClick={() => goto(page + 1)}
 									disabled={page === totalPages}
@@ -172,7 +172,7 @@ export default function ReviewsSection() {
 								<ChevronRight className="w-4 h-4"/>
 							</button>
 						</div>
-
+						
 						<div className="flex items-center gap-2">
 							{visiblePages.map((p, idx) =>
 									p === '...' ? (

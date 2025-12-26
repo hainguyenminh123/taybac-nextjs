@@ -1,118 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Trang chủ -->
-  <url>
-    <loc>https://taybacstore.vn/</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- Trang sản phẩm -->
-  <url>
-    <loc>https://taybacstore.vn/san-pham</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Thịt trâu gác bếp -->
-  <url>
-    <loc>https://taybacstore.vn/san-pham/trau-say</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://taybacstore.vn/products/trau-say.jpg</image:loc>
-      <image:title>Thịt trâu gác bếp Tây Bắc Điện Biên</image:title>
-      <image:caption>Thịt trâu gác bếp đặc sản Tây Bắc - Hun khói truyền thống</image:caption>
-    </image:image>
-  </url>
-  
-  <!-- Lợn sấy -->
-  <url>
-    <loc>https://taybacstore.vn/san-pham/lon-say</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://taybacstore.vn/products/lon-say.jpg</image:loc>
-      <image:title>Thịt lợn sấy gác bếp Tây Bắc</image:title>
-      <image:caption>Thịt lợn đen sấy khô đặc sản Mộc Châu Sơn La</image:caption>
-    </image:image>
-  </url>
-  
-  <!-- Lạp xưởng -->
-  <url>
-    <loc>https://taybacstore.vn/san-pham/lap-xuong</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://taybacstore.vn/products/lap-xuong.jpg</image:loc>
-      <image:title>Lạp xưởng Tây Bắc Sapa Lào Cai</image:title>
-      <image:caption>Lạp xưởng mắc khén đặc sản vùng cao</image:caption>
-    </image:image>
-  </url>
-  
-  <!-- Măng khô -->
-  <url>
-    <loc>https://taybacstore.vn/san-pham/mang-kho</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://taybacstore.vn/products/mang-kho.jpg</image:loc>
-      <image:title>Măng khô Tây Bắc Điện Biên Sơn La</image:title>
-      <image:caption>Măng khô rừng phơi nắng tự nhiên</image:caption>
-    </image:image>
-  </url>
-  
-  <!-- Ngô -->
-  <url>
-    <loc>https://taybacstore.vn/san-pham/ngo-tay-bac</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://taybacstore.vn/products/ngo.jpg</image:loc>
-      <image:title>Ngô nếp Tây Bắc Hà Giang</image:title>
-      <image:caption>Ngô nếp vùng cao bùi ngọt tự nhiên</image:caption>
-    </image:image>
-  </url>
-  
-  <!-- Về chúng mình -->
-  <url>
-    <loc>https://taybacstore.vn/ve-chung-minh</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Liên hệ -->
-  <url>
-    <loc>https://taybacstore.vn/lien-he</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Chính sách -->
-  <url>
-    <loc>https://taybacstore.vn/chinh-sach</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <!-- Thanh toán -->
-  <url>
-    <loc>https://taybacstore.vn/thanh-toan</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
+
+    <!-- Trang chủ -->
+    <url>
+        <loc>https://taybacstore.vn/</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Trang sản phẩm -->
+    <url>
+        <loc>https://taybacstore.vn/san-pham</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Thịt trâu gác bếp -->
+    <url>
+        <loc>https://taybacstore.vn/san-pham/trau-say</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://taybacstore.vn/products/trau-say.jpg</image:loc>
+            <image:title>Thịt trâu gác bếp Tây Bắc Điện Biên</image:title>
+            <image:caption>Thịt trâu gác bếp đặc sản Tây Bắc - Hun khói truyền thống</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Lợn sấy -->
+    <url>
+        <loc>https://taybacstore.vn/san-pham/lon-say</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://taybacstore.vn/products/lon-say.jpg</image:loc>
+            <image:title>Thịt lợn sấy gác bếp Tây Bắc</image:title>
+            <image:caption>Thịt lợn đen sấy khô đặc sản Mộc Châu Sơn La</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Lạp xưởng -->
+    <url>
+        <loc>https://taybacstore.vn/san-pham/lap-xuong</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://taybacstore.vn/products/lap-xuong.jpg</image:loc>
+            <image:title>Lạp xưởng Tây Bắc Sapa Lào Cai</image:title>
+            <image:caption>Lạp xưởng mắc khén đặc sản vùng cao</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Măng khô -->
+    <url>
+        <loc>https://taybacstore.vn/san-pham/mang-kho</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://taybacstore.vn/products/mang-kho.jpg</image:loc>
+            <image:title>Măng khô Tây Bắc Điện Biên Sơn La</image:title>
+            <image:caption>Măng khô rừng phơi nắng tự nhiên</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Ngô -->
+    <url>
+        <loc>https://taybacstore.vn/san-pham/ngo-tay-bac</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://taybacstore.vn/products/ngo.jpg</image:loc>
+            <image:title>Ngô nếp Tây Bắc Hà Giang</image:title>
+            <image:caption>Ngô nếp vùng cao bùi ngọt tự nhiên</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Về chúng mình -->
+    <url>
+        <loc>https://taybacstore.vn/ve-chung-minh</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Liên hệ -->
+    <url>
+        <loc>https://taybacstore.vn/lien-he</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Chính sách -->
+    <url>
+        <loc>https://taybacstore.vn/chinh-sach</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Thanh toán -->
+    <url>
+        <loc>https://taybacstore.vn/thanh-toan</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
 </urlset>

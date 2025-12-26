@@ -1,6 +1,6 @@
 import {useMemo, useState} from 'react';
 import {AnimatePresence, motion} from 'framer-motion';
-import {Phone, Mail, MapPin, MessageCircle, Send, ExternalLink, X} from 'lucide-react';
+import {ExternalLink, Mail, MapPin, MessageCircle, Phone, Send, X} from 'lucide-react';
 import Layout from '@/components/Layout';
 import {toast} from 'sonner';
 import {TrongDongDivider} from "@/components/TrongDongPattern.tsx";
@@ -266,7 +266,7 @@ export default function Contact() {
 				</section>
 				
 				{/* Section Divider */}
-				<TrongDongDivider className="bg-secondary/50" />
+				<TrongDongDivider className="bg-secondary/50"/>
 				
 				{/* Maps Section: hover -> inline mini map, click -> popup */}
 				<section className="pb-16 md:pb-24 bg-secondary/50">
@@ -316,23 +316,23 @@ export default function Contact() {
 											
 											<div
 													className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/35 to-transparent pointer-events-none"/>
-												<div className="absolute top-4 left-4">
+											<div className="absolute top-4 left-4">
 			                    <span
 					                    className="inline-flex items-center rounded-full border border-border/60 bg-background/80 backdrop-blur px-3 py-1 text-md font-medium text-foreground">
 			                      {card.badge}
 			                    </span>
-												</div>
-												<a
+											</div>
+											<a
 													href={card.href}
 													target="_blank"
 													rel="noopener noreferrer"
 													onClick={(e) => e.stopPropagation()}
 													className="pointer-events-auto absolute top-4 right-4 inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/80 backdrop-blur px-3 py-1 text-md font-medium text-foreground transition-colors hover:border-primary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
 													aria-label={`Open Google Maps - ${card.title}`}
-												>
-													<ExternalLink className="w-4 h-4 text-primary"/>
-													Open Maps
-												</a>
+											>
+												<ExternalLink className="w-4 h-4 text-primary"/>
+												Open Maps
+											</a>
 											
 											<div className="absolute bottom-0 left-0 right-0 p-4 md:p-5">
 												<div className="flex items-start justify-between gap-4">
